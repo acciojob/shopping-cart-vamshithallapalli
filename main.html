@@ -8,6 +8,38 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h2>Shopping Cart</h2>
+
+	 <input
+      type="text"
+      id="item-name-input"
+      placeholder="Enter item name"
+      aria-label="Item name"
+    />
+    <input
+      type="number"
+      id="item-price-input"
+      placeholder="Enter item price"
+      aria-label="Item price"
+    />
+    <button id="add">Add</button>
+
+    <!-- Table for items -->
+    <table role="table" border="1">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body" role="rowgroup">
+        <!-- Dynamic rows will be added here -->
+      </tbody>
+    </table>
+
+    <!-- Grand total -->
+    <h3 id="total">Grand Total: 0</h3>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
